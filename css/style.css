@@ -4,44 +4,107 @@
 }
 
 .dbg {
-    border : 1px dotted red;
+    border : 0px dotted red;
 }
 
 .navbar {
     width: 100%;
     height: 60px;
     margin-top: 0.5em;
-    border: 1px solid blue;
+    background-color: white;
+    border-bottom: 1px solid gainsboro;
 }
 
 .navbar > .navbar-left {
     float: left;
-    margin-left: 0.5em;
     line-height: 60px;
-    border: 2px solid rgb(0, 128, 128);
 }
 
-.navbar > .navbar-right {
+.search {
+    width: 700px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.search-bar {
+    margin: 0 auto;
+    width: 600px;
+    height: 40px;
+    border: 1px solid rgb(212, 212, 212);
+    margin-top: 0.5em;
+}
+
+.search-bar i1 {
+    font-size : 20px;
+    color: rgb(131, 131, 131);
+    cursor: pointer;
+}
+
+.search-bar i1:hover {
+    color:rgb(0, 0, 0);
+}
+
+.search-bar i2 {
+    font-size : 20px;
+}
+
+.search i3 {
+    float: left; /*위로 어케올릴까?????????*/
+    font-size: 20px;
+    background-color: lightgray;
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+.search-bar input {
+    width: 90%;
+    height: 100%;
+    background-color: transparent; /*하얗게말고 투명하게 만듬*/
+    border: none;
+    font-size: 16px;
+    color: gray;    
+}
+
+.navbar > .navbar-right { /*왜 안올라가?????????*/
     float: right;
-    margin-right: 0.5em;
     line-height: 60px;
-    border: 2px solid rgb(0, 128, 75);
 }
 
 .navbar li {
     list-style-type: none;
     float: left;
-    margin: 0px 0.5cm;
-    
-    
+    margin: 0px 0.5cm;    
 }
 
-.navbar-down {
+.navbar-down { 
     width: 100%;
     height: 50px;
-    float: left;
-    background-color: gainsboro;
-    
+    float: right; /*오른쪽 상단 바가 해결되면 대충 될거같은데..???????*/
+    background-color: white;
+    border-bottom: 1px solid gainsboro;
+}
+
+.navbar-down > ul { /*이걸 오른쪽으로 밀어넣어야 하는데???????*/
+    margin: 10px 9%;
+}
+
+.navbar-down > li {
+    border-radius: 24px;
+}
+
+.navbar-down button { /*이 영역안에 있는 button만 그런데 또 > 는 안쓰는*/
+    background-color: rgb(243, 241, 241);
+    border: 1px solid rgb(192, 192, 192);
+    border-radius: 40px;
+    font-size: 0.9em;
+    text-align: center;
+    padding: 5px 10px;
+    margin: 0 -13px;
+    cursor: pointer; 
+}
+
+.navbar-down button:hover {
+    background-color: rgb(224, 224, 224);
 }
 
 li > a {
@@ -54,36 +117,33 @@ li > a:visited {
 }
 
 
-
-.navbar-center {
-    float: left;
-
-    width: 600px;
-    margin: 0 auto;
-    background-color: violet;
+.navbar-left-column > ul {
+    width: 230px;
+    background-color: rgb(104, 104, 104);
 }
 
-.search-bar {
-    width: 600px;
-    background-color: rgb(170, 151, 170);
-    border: 1px solid gainsboro;
-    height: 40px;
-    
+.section {
+    border-bottom: 1px solid gainsboro;
 }
 
-.search-bar input {
-    width: 90%;
-    height: 100%;
-    background-color: transparent; /*하얗게말고 투명하게 만듬*/
-    border: none;
-    font-size: 16px;
-    
+.navbar-left-column > li > a { /*열 네비바가 아예 안먹힘??????????*/
+    display: block; /*블록으로 확장해서 네모박스를 클릭해도 이동할 수 있음*/
+    padding: 0px 16px;
+    color: #000;
+    text-decoration: none;
+
 }
 
+li a:hover {
+    color: gainsboro;
+}
 
+.section_1 > li a {
+    color: gainsboro;
+    font-size: 13px;
+}
 
-.navbar-left-column {
-    width: 100px;
-    height: 100%;
-    background-color: gold;
+.section_2 > li {
+    color: gainsboro;
+    font-size: 12px;
 }
