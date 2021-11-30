@@ -7,21 +7,22 @@
     border : 0px dotted red;
 }
 
-.navbar {
+.navbar { /*해결: flex를 썼더니 올라갔다..^^*/
+    display: flex;
     width: 100%;
     height: 60px;
     margin-top: 0.5em;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     border-bottom: 1px solid gainsboro;
 }
 
 .navbar > .navbar-left {
-    float: left;
     line-height: 60px;
 }
 
 .search {
-    width: 700px;
+    display: flex;
+    width: 800px;
     height: 100%;
     margin: 0 auto;
 }
@@ -48,12 +49,27 @@
     font-size : 20px;
 }
 
+.search-bar button { 
+    /*width: 50px;
+    height: 10px;*/
+    display: flex;
+    background-color: rgb(243, 241, 241);
+    border: 1px solid rgb(192, 192, 192);
+    border-radius: 3px;
+    text-align: center;
+    padding: 10px 25px;
+    margin: -41px 580px;
+    cursor: pointer; 
+}
+
 .search i3 {
-    float: left; /*위로 어케올릴까?????????*/
+    float: left; 
+    padding: 15px 20px;
+    margin: 5px 40px;
+    border-radius: 36px;
     font-size: 20px;
-    background-color: lightgray;
-    border-radius: 24px;
     cursor: pointer;
+    background-color: rgb(240, 240, 240);
 }
 
 .search-bar input {
@@ -65,8 +81,7 @@
     color: gray;    
 }
 
-.navbar > .navbar-right { /*왜 안올라가?????????*/
-    float: right;
+.navbar > .navbar-right { 
     line-height: 60px;
 }
 
@@ -77,22 +92,21 @@
 }
 
 .navbar-down { 
-    width: 100%;
+    width: 1500px;
     height: 50px;
-    float: right; /*오른쪽 상단 바가 해결되면 대충 될거같은데..???????*/
-    background-color: white;
+    float: right;
+    background-color: rgb(255, 255, 255);
     border-bottom: 1px solid gainsboro;
 }
 
-.navbar-down > ul { /*이걸 오른쪽으로 밀어넣어야 하는데???????*/
-    margin: 10px 9%;
+.navbar-down > ul { 
+    display: flex;
+    margin: 10px 10px;
+    list-style-type: none;
+    justify-content: space-evenly;
 }
 
-.navbar-down > li {
-    border-radius: 24px;
-}
-
-.navbar-down button { /*이 영역안에 있는 button만 그런데 또 > 는 안쓰는*/
+.navbar-down button { 
     background-color: rgb(243, 241, 241);
     border: 1px solid rgb(192, 192, 192);
     border-radius: 40px;
@@ -116,10 +130,9 @@ li > a:visited {
     color: black;
 }
 
-
 .navbar-left-column > ul {
-    width: 230px;
-    background-color: rgb(104, 104, 104);
+    width: 200px;
+    background-color: grey;
 }
 
 .section {
@@ -147,3 +160,21 @@ li a:hover {
     color: gainsboro;
     font-size: 12px;
 }
+
+.wrapper {
+    width: 1700px;
+    height: 1000px;
+    position: relative;
+    left: 200px;
+    top: -725px;
+    background-color: rgba(238, 238, 238, 0.836);
+}
+
+.video {
+    width: 360px;
+    height: 200px;
+    margin: 20px 0px 16px 50px; /*가운데 정렬 어떻게????????? 위, 오른, 아래, 왼*/
+    float: left;
+    border: 1px solid black;
+}
+
