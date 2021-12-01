@@ -4,7 +4,7 @@
 }
 
 .dbg {
-    border : 0px dotted red;
+    border : 1px dotted red;
 }
 
 .navbar { /*해결: flex를 썼더니 올라갔다..^^*/
@@ -130,35 +130,34 @@ li > a:visited {
     color: black;
 }
 
-.navbar-left-column > ul {
-    width: 200px;
-    background-color: grey;
-}
-
 .section {
     border-bottom: 1px solid gainsboro;
-}
-
-.navbar-left-column > li > a { /*열 네비바가 아예 안먹힘??????????*/
-    display: block; /*블록으로 확장해서 네모박스를 클릭해도 이동할 수 있음*/
-    padding: 0px 16px;
-    color: #000;
-    text-decoration: none;
-
-}
-
-li a:hover {
-    color: gainsboro;
+    padding: 15px 20px;
 }
 
 .section_1 > li a {
-    color: gainsboro;
+    color: rgb(68, 68, 68);
     font-size: 13px;
 }
 
 .section_2 > li {
-    color: gainsboro;
+    color: rgb(160, 160, 160);
     font-size: 12px;
+}
+
+.navbar-left-column { 
+    display: block; /*블록으로 확장해서 네모박스를 클릭해도 이동할 수 있음*/
+    width: 240px;
+    font-size: 15px;
+}
+
+.navbar-left-column ul li {
+    list-style-type: none;
+    padding: 10px;
+}
+
+li a:hover {
+    color: gainsboro;
 }
 
 .wrapper {
